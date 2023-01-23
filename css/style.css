@@ -9,30 +9,49 @@
 
 header {
   width: 100%;
-  height: 5em;
+  height: auto;
   display: flex;
   justify-content: center;
-  margin-bottom: 2em;
 }
 header .head {
   display: flex;
   width: 80%;
-  height: auto;
+  height: 6em;
   justify-content: space-between;
   align-items: center;
   border-bottom: 1px solid hsl(220deg, 14%, 75%);
-  margin-top: 1em;
-  padding-top: 2em;
-  padding-bottom: 2.5em;
 }
 header .head .leftHeader {
   display: flex;
   gap: 1em;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
 }
-header .head .leftHeader .btnHeader {
+header .head .leftHeader img {
+  margin-right: 1rem;
+  width: 40%;
+  height: 1.1em;
+  cursor: pointer;
+}
+header .head .leftHeader .contentBtns {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+header .head .leftHeader .contentBtns .btnHeader {
   border: none;
   background-color: transparent;
   cursor: pointer;
+  color: hsl(219deg, 9%, 45%);
+  height: 100%;
+  border-bottom: 2px solid transparent;
+}
+header .head .leftHeader .contentBtns .btnHeader:hover {
+  color: hsl(220deg, 13%, 13%);
+  border-bottom: 2px solid hsl(26deg, 100%, 55%);
 }
 header .head .rightHeader > * {
   cursor: pointer;
@@ -41,9 +60,47 @@ header .head .rightHeader {
   display: flex;
   align-items: center;
   column-gap: 2em;
+  justify-content: flex-end;
 }
-header .head .rightHeader #person {
-  width: 28%;
+header .head .rightHeader #imgCar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+header .head .rightHeader #imgCar #car:hover {
+  filter: brightness(50%);
+}
+header .head .rightHeader #imgCar #itensInCar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 1.1em;
+  height: 0.8em;
+  background-color: hsl(26deg, 100%, 55%);
+  border-radius: 20em;
+  position: absolute;
+  bottom: 0.8em;
+  left: 0.7em;
+}
+header .head .rightHeader #imgCar #itensInCar #quantifyInCar {
+  color: white;
+  font-size: 13px;
+}
+header .head .rightHeader #imgPerson {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 2.73em;
+  height: 2.73em;
+}
+header .head .rightHeader #imgPerson:hover {
+  background-color: hsl(26deg, 100%, 55%);
+  border-radius: 20em;
+}
+header .head .rightHeader #imgPerson #person {
+  width: 2.5em;
+  height: auto;
 }
 
 /*# sourceMappingURL=style.css.map */

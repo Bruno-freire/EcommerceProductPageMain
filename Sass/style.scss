@@ -18,27 +18,46 @@ $LightGrayishBlue: hsl(223, 64%, 98%);
 
 header{
   width: 100%;
-  height: 5em;
+  height: auto;
   display: flex;
   justify-content: center;
-  margin-bottom: 2em;
   .head{
     display: flex;
     width: 80%;
-    height: auto;
+    height: 6em;
     justify-content: space-between;
     align-items: center;
     border-bottom: 1px solid $GrayishBlue;
-    margin-top: 1em;
-    padding-top: 2em;
-    padding-bottom: 2.5em;
     .leftHeader{
       display: flex;
       gap: 1em;
-      .btnHeader{
-        border: none;
-        background-color: transparent;
+      height: 100%;
+      justify-content: center;
+      align-items: center;
+      img{
+        margin-right: 1rem;
+        width: 40%;
+        height: 1.1em;
         cursor: pointer;
+      }
+      .contentBtns{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+        .btnHeader{
+          border: none;
+          background-color: transparent;
+          cursor: pointer;
+          color: $DarkGrayisBlue;
+          height: 100%;
+          border-bottom: 2px solid transparent;
+          &:hover{
+            color: $VeryDarkBlue;
+            border-bottom: 2px solid $Orange;
+          }
+        }
       }
     }
     .rightHeader > * {
@@ -48,8 +67,48 @@ header{
       display: flex;
       align-items: center;
       column-gap: 2em;
-      #person{
-        width: 28%;
+      justify-content: flex-end;
+      #imgCar{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        #car{
+          &:hover{
+            filter: brightness(50%);
+          }
+        }
+        #itensInCar{
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          width: 1.1em;
+          height: 0.8em;
+          background-color: $Orange;
+          border-radius: 20em;
+          position: absolute;
+          bottom: 0.8em;
+          left: 0.7em;
+          #quantifyInCar{
+            color: white;
+            font-size: 13px;
+          }
+        }
+      }
+      #imgPerson {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 2.73em;
+        height: 2.73em;
+        &:hover{
+          background-color: $Orange;
+          border-radius: 20em;
+        }
+        #person{
+          width: 2.5em;
+          height: auto;
+        }
       }
     }
   }

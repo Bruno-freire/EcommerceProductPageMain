@@ -5,6 +5,11 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   <title>Frontend Mentor | E-commerce product page</title>
+  <script src="./src/index.js" defer type="module"></script>
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
   <link rel="stylesheet" href="./css/style.css">
 </head>
 <body>
@@ -12,15 +17,32 @@
     <div class="head">
       <div class="leftHeader">
         <img src="./images/logo.svg" alt="">
-        <button class="btnHeader">Collections</button>
-        <button class="btnHeader">Menu</button>
-        <button class="btnHeader">Women</button>
-        <button class="btnHeader">About</button>
-        <button class="btnHeader">Contact</button>
+        <div class="contentBtns">
+          <button class="btnHeader" id="btnHeader1">Collections</button>
+        </div>
+        <div class="contentBtns">
+          <button class="btnHeader" id="btnHeader2">Menu</button>
+        </div>
+        <div class="contentBtns">
+          <button class="btnHeader" id="btnHeader3">Women</button>
+        </div>
+        <div class="contentBtns">
+          <button class="btnHeader" id="btnHeader4">About</button>
+        </div>
+        <div class="contentBtns">
+          <button class="btnHeader" id="btnHeader5">Contact</button>
+        </div>
       </div>
       <div class="rightHeader">
-        <img src="./images/icon-cart.svg" id="car" alt="car">
-        <img src="./images/image-avatar.png" id="person" alt="person">
+        <div id="imgCar">
+          <img src="./images/icon-cart.svg" id="car" alt="car">
+          <div id="itensInCar">
+            <div id="quantifyInCar">2</div>
+          </div>
+        </div>
+        <div id="imgPerson">
+          <img src="./images/image-avatar.png" id="person" alt="person">
+        </div>
       </div>
     </div>
   </header>
