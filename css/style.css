@@ -43,6 +43,7 @@ header .head .leftHeader .contentBtns {
 }
 header .head .leftHeader .contentBtns .btnHeader {
   border: none;
+  outline: none;
   background-color: transparent;
   cursor: pointer;
   color: hsl(219deg, 9%, 45%);
