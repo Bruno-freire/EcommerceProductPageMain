@@ -44,6 +44,7 @@ header .head .leftHeader .contentBtns {
 header .head .leftHeader .contentBtns .btnHeader {
   border: none;
   outline: none;
+  max-width: 5em;
   background-color: transparent;
   cursor: pointer;
   color: hsl(219deg, 9%, 45%);
@@ -168,6 +169,7 @@ main section .firstSection .rightFirstSection .text {
   font-size: 1em;
   color: hsl(219deg, 9%, 45%);
   font-family: "Arial";
+  max-width: 26.4em;
 }
 main section .firstSection .rightFirstSection .values {
   display: flex;
@@ -230,7 +232,7 @@ main section .firstSection .rightFirstSection .itemQuantityBtns .btnAddCart > im
 }
 
 .containerImgs {
-  display: flex;
+  display: none;
   justify-content: center;
   align-items: center;
   position: absolute;
