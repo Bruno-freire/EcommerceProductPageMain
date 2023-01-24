@@ -3,7 +3,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-size: 16px;
+  font-size: 1em;
   font-family: "Kumbh Sans";
 }
 
@@ -31,7 +31,7 @@ header .head .leftHeader {
 header .head .leftHeader img {
   margin-right: 1rem;
   width: 40%;
-  height: 1.1em;
+  height: 1em;
   cursor: pointer;
 }
 header .head .leftHeader .contentBtns {
@@ -63,16 +63,16 @@ header .head .rightHeader {
   column-gap: 2em;
   justify-content: flex-end;
 }
-header .head .rightHeader #imgCar {
+header .head .rightHeader #imgCart {
   display: flex;
   justify-content: center;
   align-items: center;
   position: relative;
 }
-header .head .rightHeader #imgCar #car:hover {
+header .head .rightHeader #imgCart #cart:hover {
   filter: brightness(50%);
 }
-header .head .rightHeader #imgCar #itensInCar {
+header .head .rightHeader #imgCart #itensInCart {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -84,7 +84,7 @@ header .head .rightHeader #imgCar #itensInCar {
   bottom: 0.8em;
   left: 0.7em;
 }
-header .head .rightHeader #imgCar #itensInCar #quantifyInCar {
+header .head .rightHeader #imgCart #itensInCart #quantifyInCart {
   color: white;
   font-size: 13px;
 }
@@ -102,6 +102,131 @@ header .head .rightHeader #imgPerson:hover {
 header .head .rightHeader #imgPerson #person {
   width: 2.5em;
   height: auto;
+}
+
+main {
+  width: 100%;
+  height: auto;
+}
+main section {
+  width: 100%;
+  height: auto;
+}
+main section .firstSection {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  column-gap: 6em;
+  align-items: center;
+  margin-top: 3.5em;
+}
+main section .firstSection .leftFirstSection {
+  display: flex;
+  flex-direction: column;
+  row-gap: 1em;
+}
+main section .firstSection .leftFirstSection .mainImg {
+  display: flex;
+  justify-content: center;
+}
+main section .firstSection .leftFirstSection .mainImg img {
+  width: 19em;
+  height: auto;
+  border-radius: 0.6em;
+}
+main section .firstSection .leftFirstSection .thumbnailsImg {
+  display: flex;
+  justify-content: space-between;
+  cursor: pointer;
+}
+main section .firstSection .leftFirstSection .thumbnailsImg .thumbnail > img {
+  width: 3.8em;
+  border: 2px solid transparent;
+  border-radius: 0.4rem;
+}
+main section .firstSection .leftFirstSection .thumbnailsImg .thumbnail > img:hover {
+  transition: 0.2s;
+  border-color: hsl(26deg, 100%, 55%);
+  filter: brightness(115%) contrast(90%);
+}
+main section .firstSection .rightFirstSection {
+  display: flex;
+  flex-direction: column;
+  row-gap: 0.5em;
+}
+main section .firstSection .rightFirstSection .subTitle > * {
+  color: hsl(26deg, 100%, 55%);
+  font-weight: 700;
+}
+main section .firstSection .rightFirstSection .title > * {
+  font-size: 1.7em;
+  font-weight: 700;
+}
+main section .firstSection .rightFirstSection .text {
+  padding-top: 1em;
+  padding-bottom: 1em;
+  font-size: 1em;
+  color: hsl(219deg, 9%, 45%);
+  font-family: "Arial";
+}
+main section .firstSection .rightFirstSection .values {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 10em;
+  column-gap: 1em;
+  row-gap: 0.5em;
+  align-items: center;
+}
+main section .firstSection .rightFirstSection .values .mainValue {
+  font-weight: 700;
+  font-size: 1.5em;
+}
+main section .firstSection .rightFirstSection .values .discountAmount {
+  display: flex;
+  justify-content: center;
+  width: 2.5em;
+  border-radius: 0.2rem;
+  background-color: hsl(25deg, 100%, 94%);
+  color: hsl(26deg, 100%, 55%);
+  font-weight: 700;
+  font-size: 0.9em;
+}
+main section .firstSection .rightFirstSection .values .valueWithoutDiscount {
+  color: hsl(220deg, 14%, 75%);
+}
+main section .firstSection .rightFirstSection .itemQuantityBtns {
+  display: flex;
+  align-items: center;
+  column-gap: 2.5em;
+  cursor: default;
+}
+main section .firstSection .rightFirstSection .itemQuantityBtns .so_so {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+main section .firstSection .rightFirstSection .itemQuantityBtns .so_so > *:hover {
+  filter: brightness(145%) contrast(90%);
+}
+main section .firstSection .rightFirstSection .itemQuantityBtns .btnAddCart {
+  background-color: hsl(26deg, 100%, 55%);
+  color: white;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  justify-content: center;
+  height: 2.5rem;
+  border-radius: 0.5em;
+  column-gap: 0.4em;
+  font-size: 0.8em;
+  cursor: pointer;
+}
+main section .firstSection .rightFirstSection .itemQuantityBtns .btnAddCart:hover {
+  transition: 0.2s;
+  background-color: hsl(26deg, 100%, 66%);
+}
+main section .firstSection .rightFirstSection .itemQuantityBtns .btnAddCart > img {
+  width: 1.2em;
 }
 
 /*# sourceMappingURL=style.css.map */
