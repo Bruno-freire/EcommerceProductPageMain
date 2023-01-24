@@ -1,12 +1,4 @@
 @import url("https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap");
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-size: 1em;
-  font-family: "Kumbh Sans";
-}
-
 header {
   width: 100%;
   height: auto;
@@ -103,6 +95,14 @@ header .head .rightHeader #imgPerson:hover {
 header .head .rightHeader #imgPerson #person {
   width: 2.5em;
   height: auto;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-size: 1em;
+  font-family: "Kumbh Sans";
 }
 
 main {
