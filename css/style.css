@@ -8,6 +8,7 @@ header {
 header .head {
   display: flex;
   width: 80%;
+  max-width: 70em;
   height: 6em;
   justify-content: space-between;
   align-items: center;
@@ -112,6 +113,9 @@ main {
 main section {
   width: 100%;
   height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 main section .firstSection {
   display: flex;
@@ -130,11 +134,7 @@ main section .firstSection .leftFirstSection {
 main section .firstSection .leftFirstSection .mainImg {
   display: flex;
   justify-content: center;
-}
-main section .firstSection .leftFirstSection .mainImg img {
-  width: 19em;
-  height: auto;
-  border-radius: 0.6em;
+  max-width: 22em;
 }
 main section .firstSection .leftFirstSection .thumbnailsImg {
   display: flex;
