@@ -1,5 +1,4 @@
 import '../css/style.css'
-import 'bootstrap'
 import 'bootstrap/dist/css/bootstrap.min.css'
 
 import { closeImgs, openImgsThroughThumbnail } from "../modules/openOrCloseContantImgs.js"
