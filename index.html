@@ -2,11 +2,12 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   <link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap.css">
   <title>Frontend Mentor | E-commerce product page</title>
-  <script src="./src/index.js" defer type="module"></script>
+  <script src="./src/index.js" type="module" defer></script>
+  <!-- //bootstrap script here -->
   <script src="./node_modules/bootstrap/dist/js/bootstrap.js" defer></script> 
   <style>
     .attribution { font-size: 11px; text-align: center; }
@@ -55,17 +56,17 @@
           <div class="mainImg">
             <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
               <div class="carousel-inner">
-                  <div class="carousel-item active" data-bs-interval="10000">
-                      <img src="./images/image-product-1.jpg" class="d-block w-100" alt="product-1">
-                  </div>
-                  <div class="carousel-item" data-bs-interval="10000">
-                      <img src="./images/image-product-2.jpg" class="d-block w-100" alt="product-2">
-                  </div>
-                  <div class="carousel-item" data-bs-interval="10000">
-                      <img src="./images/image-product-3.jpg" class="d-block w-100" alt="product-3">
-                  </div>
-                  <div class="carousel-item" data-bs-interval="10000">
-                    <img src="./images/image-product-4.jpg" class="d-block w-100" alt="product-4">
+                <div class="carousel-item active" data-value="1" >
+                    <img src="./images/image-product-1.jpg" class="d-block w-100" alt="product-1">
+                </div>
+                <div class="carousel-item" data-value="2" id="product2" >
+                    <img src="./images/image-product-2.jpg" class="d-block w-100" alt="product-2">
+                </div>
+                <div class="carousel-item" data-value="3" id="product3" >
+                    <img src="./images/image-product-3.jpg" class="d-block w-100" alt="product-3">
+                </div>
+                <div class="carousel-item" data-value="4" id="product4" >
+                  <img src="./images/image-product-4.jpg" class="d-block w-100" alt="product-4">
                 </div>
               </div>
               <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="prev">
@@ -79,10 +80,10 @@
           </div>
           </div>
           <div class="thumbnailsImg">
-            <div class="thumbnail"><img src="./images/image-product-1-thumbnail.jpg" alt="thumbnail1"></div>
-            <div class="thumbnail"><img src="./images/image-product-2-thumbnail.jpg" alt="thumbnail2"></div>
-            <div class="thumbnail"><img src="./images/image-product-3-thumbnail.jpg" alt="thumbnail3"></div>
-            <div class="thumbnail"><img src="./images/image-product-4-thumbnail.jpg" alt="thumbnail4"></div>
+            <div class="thumbnail" data-value="1"><img src="./images/image-product-1-thumbnail.jpg" alt="thumbnail1"></div>
+            <div class="thumbnail" data-value="2"><img src="./images/image-product-2-thumbnail.jpg" alt="thumbnail2"></div>
+            <div class="thumbnail" data-value="3"><img src="./images/image-product-3-thumbnail.jpg" alt="thumbnail3"></div>
+            <div class="thumbnail" data-value="4"><img src="./images/image-product-4-thumbnail.jpg" alt="thumbnail4"></div>
           </div>
         </div>
         <div class="rightFirstSection">
@@ -98,26 +99,41 @@
           <div class="itemQuantityBtns">
             <div class="so_so" id="minus"><img src="./images/icon-minus.svg" alt="minus"></div>
             <div id="valueSO_SO">0</div>
-            <div class="so_so"><img src="./images/icon-plus.svg" alt="plus"></div>
+            <div class="so_so" id="plus"><img src="./images/icon-plus.svg" alt="plus"></div>
             <div class="btnAddCart"><img src="./images/icons8-carrinho-de-compras-32.png" alt="cart">Add to cart</div>
           </div>
         </div>
       </div>
     </section>
   </main>
-  <div class="containerImgs">
+  <div class="containerImgs" id="containerImg">
     <div class="contentMain">
-      <div class="closeImg"><img src="./images/icons8-excluir-30.png" alt="close"></div>
-      <div class="mainImgCarousel"><img src="./images/image-product-1.jpg" alt="product-1"></div>
-      <div class="arrowImg">
-        <div class="leftArrow"><img src="./images/icons8-chevron-esquerda-25.png" alt="icon-next"></div>
-        <div class="rightArrow"><img src="./images/icons8-chevron-esquerda-25.png" alt="icon-next"></div>
-      </div>
-      <div class="thumbnailsContent">
-        <div class="thumbnail"><img src="./images/image-product-1-thumbnail.jpg" alt="thumbnail1"></div>
-        <div class="thumbnail"><img src="./images/image-product-2-thumbnail.jpg" alt="thumbnail2"></div>
-        <div class="thumbnail"><img src="./images/image-product-3-thumbnail.jpg" alt="thumbnail3"></div>
-        <div class="thumbnail"><img src="./images/image-product-4-thumbnail.jpg" alt="thumbnail4"></div>
+      <div class="closeImg" ><img src="./images/icons8-excluir-30.png" id="close" alt="close"></div>
+      <div class="mainImgCarousel">
+        <div id="carouselExampleInterval1" class="carousel slide" data-bs-ride="carousel">
+          <div class="carousel-inner">
+            <div class="carousel-item" data-value="1" id="product1" data-bs-interval="10000">
+                <img src="./images/image-product-1.jpg" class="d-block w-100" alt="product-1">
+            </div>
+            <div class="carousel-item" data-value="2" id="product2" data-bs-interval="10000">
+                <img src="./images/image-product-2.jpg" class="d-block w-100" alt="product-2">
+            </div>
+            <div class="carousel-item" data-value="3" id="product3" data-bs-interval="10000">
+                <img src="./images/image-product-3.jpg" class="d-block w-100" alt="product-3">
+            </div>
+            <div class="carousel-item" data-value="4" id="product4" data-bs-interval="10000">
+              <img src="./images/image-product-4.jpg" class="d-block w-100" alt="product-4">
+            </div>
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval1" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval1" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next </span>
+          </button>
+        </div>
       </div>
     </div>
     <div class="backgroundBlack"></div>

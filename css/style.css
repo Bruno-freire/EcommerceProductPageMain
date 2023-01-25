@@ -71,7 +71,7 @@ header .head .rightHeader #imgCart #itensInCart {
   justify-content: center;
   align-items: center;
   width: 1.1em;
-  height: 0.8em;
+  height: 0.9em;
   background-color: hsl(26deg, 100%, 55%);
   border-radius: 20em;
   position: absolute;
@@ -108,7 +108,7 @@ header .head .rightHeader #imgPerson #person {
 
 main {
   width: 100%;
-  height: auto;
+  height: 100%;
 }
 main section {
   width: 100%;
@@ -131,10 +131,13 @@ main section .firstSection .leftFirstSection {
   flex-direction: column;
   row-gap: 1em;
 }
+main section .firstSection .leftFirstSection .carousel-inner {
+  border-radius: 0.7em;
+}
 main section .firstSection .leftFirstSection .mainImg {
   display: flex;
   justify-content: center;
-  max-width: 22em;
+  max-width: 20em;
 }
 main section .firstSection .leftFirstSection .thumbnailsImg {
   display: flex;
@@ -200,7 +203,7 @@ main section .firstSection .rightFirstSection .values .valueWithoutDiscount {
 main section .firstSection .rightFirstSection .itemQuantityBtns {
   display: flex;
   align-items: center;
-  column-gap: 2.5em;
+  justify-content: space-between;
   cursor: default;
 }
 main section .firstSection .rightFirstSection .itemQuantityBtns .so_so {
@@ -217,6 +220,7 @@ main section .firstSection .rightFirstSection .itemQuantityBtns .btnAddCart {
   display: flex;
   align-items: center;
   width: 100%;
+  max-width: 20em;
   justify-content: center;
   height: 2.5rem;
   border-radius: 0.5em;
@@ -237,7 +241,7 @@ main section .firstSection .rightFirstSection .itemQuantityBtns .btnAddCart > im
   justify-content: center;
   align-items: center;
   position: absolute;
-  top: 0;
+  bottom: 0;
   width: 100%;
   height: 100%;
 }
@@ -249,6 +253,7 @@ main section .firstSection .rightFirstSection .itemQuantityBtns .btnAddCart > im
   z-index: 1;
   position: relative;
   width: 100%;
+  height: 100%;
   row-gap: 1em;
 }
 .containerImgs .contentMain .closeImg {
@@ -259,8 +264,10 @@ main section .firstSection .rightFirstSection .itemQuantityBtns .btnAddCart > im
   width: 1.2em;
   cursor: pointer;
 }
-.containerImgs .contentMain .mainImgCarousel img {
+.containerImgs .contentMain .mainImgCarousel {
   width: 22em;
+}
+.containerImgs .contentMain .mainImgCarousel .carousel-inner {
   border-radius: 0.7em;
 }
 .containerImgs .contentMain .arrowImg {
@@ -301,20 +308,6 @@ main section .firstSection .rightFirstSection .itemQuantityBtns .btnAddCart > im
 .containerImgs .contentMain .arrowImg .rightArrow > img {
   width: 1.2em;
   transform: rotate(180deg);
-}
-.containerImgs .contentMain .thumbnailsContent {
-  display: flex;
-  column-gap: 1em;
-}
-.containerImgs .contentMain .thumbnailsContent img {
-  width: 3.8em;
-  border: 2px solid transparent;
-  border-radius: 0.4rem;
-}
-.containerImgs .contentMain .thumbnailsContent img:hover {
-  transition: 0.2s;
-  border-color: hsl(26deg, 100%, 55%);
-  filter: brightness(115%) contrast(90%);
 }
 .containerImgs .backgroundBlack {
   position: absolute;
