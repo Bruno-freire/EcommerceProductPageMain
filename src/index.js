@@ -1,5 +1,5 @@
-import { minus, plus } from "../modules/minusOrPlus.js"
 import { closeImgs, openImgsThroughThumbnail } from "../modules/openOrCloseContantImgs.js"
+
 const imgClose = document.getElementById('close')
 imgClose.addEventListener('click', closeImgs)
 
@@ -9,6 +9,8 @@ document.querySelectorAll('.carousel-item').forEach((ev) => ev.addEventListener(
 document.querySelectorAll('.thumbnail').forEach((ev) => ev.addEventListener('click', () => {
   openImgsThroughThumbnail(ev.dataset.value)
 }))
+
+import { minus, plus } from "../modules/minusOrPlus.js"
 
 document.getElementById('minus').addEventListener('click', minus)
 document.getElementById('plus').addEventListener('click', plus)
