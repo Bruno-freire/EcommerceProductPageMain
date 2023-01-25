@@ -1,3 +1,5 @@
+import '../css/style.css'
+
 import { closeImgs, openImgsThroughThumbnail } from "../modules/openOrCloseContantImgs.js"
 
 const imgClose = document.getElementById('close')
