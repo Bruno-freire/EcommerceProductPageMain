@@ -1,7 +1,7 @@
-const path = require('path')
-
 module.exports = {
-  entry: path.resolve(__dirname, './src/index.js'),
+  entry: {
+    main: './src/index.js'
+  },
   mode: 'production',
   module: {
     rules: [{
@@ -9,7 +9,7 @@ module.exports = {
       use: ['style-loader', 'css-loader']
     }, {
       test: /\.js$/,
-      loader: 'babel-loader'
-  }]
-  }
+      use: ['babel-loader']
+    }]
+  },
 }
