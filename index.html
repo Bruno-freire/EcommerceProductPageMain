@@ -4,6 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="../css/style.css">
   <title>Frontend Mentor | E-commerce product page</title>
   <!-- //bootstrap script here -->
   <style>
@@ -35,8 +36,32 @@
       <div class="rightHeader">
         <div id="imgCart">
           <img src="./images/icon-cart.svg" id="cart" alt="cart">
-          <div id="itensInCart">
-            <div id="quantifyInCart">2</div>
+          <div id="itensInCart" style="display: none;">
+            <div id="quantifyInCart"></div>
+          </div>
+          <div class="miniSection" id="contentCart" style="display: none;">
+            <div class="cartTitleSection"><strong>Cart</strong><hr></div>
+            <div class="contentMiniSection">
+              <div class="miniContent">
+                <div class="shoesToBuy">
+                  <div class="miniImgSection"><img src="./images/image-product-1-thumbnail.jpg" alt="product-1"></div>
+                  <div class="textAndValueMiniSection">
+                    <div class="titleShoesToBuy">Fall Limited Edition Sneakers</div>
+                    <div class="valueShoesToBuy">$125.00 x 3 <strong>$375.00</strong></div>
+                  </div>
+                  <div class="imgDelete"><img src="./images/icon-delete.svg" alt=""></div>
+                </div>
+                <div class="shoesToBuy">
+                  <div class="miniImgSection"><img src="./images/image-product-1-thumbnail.jpg" alt="product-1"></div>
+                  <div class="textAndValueMiniSection">
+                    <div class="titleShoesToBuy">Fall Limited Edition Sneakers</div>
+                    <div class="valueShoesToBuy">$125.00 x 3 <strong>$375.00</strong></div>
+                  </div>
+                  <div class="imgDelete"><img src="./images/icon-delete.svg" alt=""></div>
+                </div>
+              </div>
+              <div class="checkout"><button>Checkout</button></div>
+            </div>
           </div>
         </div>
         <div id="imgPerson">
@@ -96,7 +121,7 @@
             <div class="so_so" id="minus"><img src="./images/icon-minus.svg" alt="minus"></div>
             <div id="valueSO_SO">0</div>
             <div class="so_so" id="plus"><img src="./images/icon-plus.svg" alt="plus"></div>
-            <div class="btnAddCart"><img src="./images/icons8-carrinho-de-compras-32.png" alt="cart">Add to cart</div>
+            <div class="btnAddCart" id="addItemInTheCart"><img src="./images/icons8-carrinho-de-compras-32.png" alt="cart">Add to cart</div>
           </div>
         </div>
       </div>

@@ -18,3 +18,11 @@ import { minus, plus } from "../modules/minusOrPlus.js"
 
 document.getElementById('minus').addEventListener('click', minus)
 document.getElementById('plus').addEventListener('click', plus)
+
+import { openOrCloseContentCart } from '../modules/openOrCloseContentCart.js'
+
+document.getElementById('cart').addEventListener('click', openOrCloseContentCart)
+
+import { addItemInCart } from '../modules/treatCart.js'
+
+document.getElementById('addItemInTheCart').addEventListener('click', addItemInCart)

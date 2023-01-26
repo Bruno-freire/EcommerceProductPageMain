@@ -130,6 +130,7 @@ main section .firstSection .leftFirstSection {
   display: flex;
   flex-direction: column;
   row-gap: 1em;
+  max-width: 20em;
 }
 main section .firstSection .leftFirstSection .carousel-inner {
   border-radius: 0.7em;
@@ -316,6 +317,94 @@ main section .firstSection .rightFirstSection .itemQuantityBtns .btnAddCart > im
   height: 100%;
   opacity: 0.7;
   z-index: 0;
+}
+
+.miniSection {
+  cursor: initial;
+  display: none;
+  position: absolute;
+  flex-direction: column;
+  align-items: center;
+  max-width: 16em;
+  width: 15em;
+  height: 11em;
+  top: 3.5em;
+  row-gap: 1.5em;
+  background-color: white;
+  box-shadow: -2px 4px 8px 0.1em rgb(218, 218, 218);
+  border-radius: 0.4em;
+}
+.miniSection .cartTitleSection {
+  max-width: 16em;
+  width: 100%;
+  height: 1.6em;
+  font-size: 16px;
+}
+.miniSection .cartTitleSection > strong {
+  position: relative;
+  left: 1em;
+  top: 0.4em;
+}
+.miniSection .contentMiniSection {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 6.8em;
+  max-width: 15em;
+  row-gap: 1em;
+}
+.miniSection .contentMiniSection .miniContent {
+  max-height: 3em;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  row-gap: 0.1em;
+  overflow-y: scroll;
+}
+.miniSection .contentMiniSection .miniContent .shoesToBuy {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  column-gap: 0.1em;
+  width: 100%;
+  padding-left: 1em;
+  padding-right: 1em;
+}
+.miniSection .contentMiniSection .miniContent .shoesToBuy .contentMini {
+  display: flex;
+  flex-direction: column;
+}
+.miniSection .contentMiniSection .miniContent .shoesToBuy .miniImgSection img {
+  width: 3em;
+  border-radius: 0.5em;
+}
+.miniSection .contentMiniSection .miniContent .shoesToBuy .textAndValueMiniSection {
+  font-size: 10px;
+}
+.miniSection .contentMiniSection .miniContent .shoesToBuy .imgDelete {
+  display: flex;
+  cursor: pointer;
+}
+.miniSection .contentMiniSection .checkout {
+  display: flex;
+  justify-content: center;
+  width: 13em;
+}
+.miniSection .contentMiniSection .checkout button {
+  background-color: hsl(26deg, 100%, 55%);
+  width: 100%;
+  height: 2.5em;
+  border: none;
+  border-radius: 0.5em;
+  color: white;
+  font-size: 14px;
+}
+.miniSection .contentMiniSection .checkout button:hover {
+  transition: 0.2s;
+  background-color: hsl(26deg, 100%, 66%);
 }
 
 /*# sourceMappingURL=style.css.map */
