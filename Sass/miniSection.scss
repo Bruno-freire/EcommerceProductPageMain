@@ -35,9 +35,11 @@
       max-height: 3em;
       display: flex;
       flex-direction: column;
-      align-items: flex-start;
+      width: 100%;
+      align-items: center;
       row-gap: 0.1em;
-      overflow-y: scroll;
+      overflow-y: auto;
+      scrollbar-width: 0.21em;  
       .shoesToBuy{
         display: flex;
         flex-direction: row;
@@ -47,15 +49,15 @@
         width: 100%;
         padding-left: 1em;
         padding-right: 1em;
-        .contentMini{
-          display: flex;
-          flex-direction: column;
-        }
         .miniImgSection{
           img{
             width: 3em;
             border-radius: 0.5em;
           }
+        }
+        .titleShoesToBuy{
+          font-size: 10px;
+          width: 14em;
         }
         .textAndValueMiniSection{
           font-size: 10px;
@@ -67,7 +69,6 @@
       }
     }
     .checkout{
-      display: flex;
       justify-content: center;
       width: 13em;
       button{

@@ -321,7 +321,6 @@ main section .firstSection .rightFirstSection .itemQuantityBtns .btnAddCart > im
 
 .miniSection {
   cursor: initial;
-  display: none;
   position: absolute;
   flex-direction: column;
   align-items: center;
@@ -359,9 +358,11 @@ main section .firstSection .rightFirstSection .itemQuantityBtns .btnAddCart > im
   max-height: 3em;
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
+  width: 100%;
+  align-items: center;
   row-gap: 0.1em;
-  overflow-y: scroll;
+  overflow-y: auto;
+  scrollbar-width: 0.21em;
 }
 .miniSection .contentMiniSection .miniContent .shoesToBuy {
   display: flex;
@@ -373,13 +374,13 @@ main section .firstSection .rightFirstSection .itemQuantityBtns .btnAddCart > im
   padding-left: 1em;
   padding-right: 1em;
 }
-.miniSection .contentMiniSection .miniContent .shoesToBuy .contentMini {
-  display: flex;
-  flex-direction: column;
-}
 .miniSection .contentMiniSection .miniContent .shoesToBuy .miniImgSection img {
   width: 3em;
   border-radius: 0.5em;
+}
+.miniSection .contentMiniSection .miniContent .shoesToBuy .titleShoesToBuy {
+  font-size: 10px;
+  width: 14em;
 }
 .miniSection .contentMiniSection .miniContent .shoesToBuy .textAndValueMiniSection {
   font-size: 10px;
@@ -389,7 +390,6 @@ main section .firstSection .rightFirstSection .itemQuantityBtns .btnAddCart > im
   cursor: pointer;
 }
 .miniSection .contentMiniSection .checkout {
-  display: flex;
   justify-content: center;
   width: 13em;
 }
