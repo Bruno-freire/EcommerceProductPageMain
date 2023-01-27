@@ -13,8 +13,12 @@ function creatElementFunction(srcImg,title,value){
   const imgDelete = document.createElement('div')
   imgDelete.className = 'imgDelete'
   const imgD = document.createElement('img')
+  imgD.classList = 'trashCan'
   imgD.setAttribute('src', './images/icon-delete.svg')
   imgDelete.appendChild(imgD)
+  imgD.addEventListener('click', () => {
+    deleteImg(imgDelete)
+  })
 
   const titleShoesToBuy = document.createElement('div')
   titleShoesToBuy.className = 'titleShoesToBuy'
@@ -54,5 +58,24 @@ export function addItemInCart(){
   const checkout = document.getElementById('checkoutId')
   if(checkout.style.display == 'none'){
     checkout.style.display = 'flex'
+  }
+}
+
+export function deleteImg(ev){
+  ev.parentNode.remove()
+  let quantifyInCart = document.getElementById('quantifyInCart')
+  if(quantifyInCart.innerText == 1){
+    quantifyInCart.innerText = 0
+    document.getElementById('itensInCart').style.display = 'none'
+  }else{
+    let quantifyInCartText = parseInt(quantifyInCart.innerText)
+    quantifyInCartText--
+    quantifyInCart.innerText = quantifyInCartText
+  }
+  const miniContent = document.querySelector('.miniContent')
+  if(miniContent.childNodes.length == 0){
+    miniContent.innerText = 'Is Empty'
+    document.getElementById('checkoutId').style.display = 'none'
+
   }
 }
