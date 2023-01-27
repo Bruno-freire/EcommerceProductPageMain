@@ -74,7 +74,7 @@ export function deleteImg(ev){
   }
   const miniContent = document.querySelector('.miniContent')
   if(miniContent.childNodes.length == 0){
-    miniContent.innerText = 'Is Empty'
+    miniContent.innerText = 'Is Empty.'
     document.getElementById('checkoutId').style.display = 'none'
 
   }

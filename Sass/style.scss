@@ -10,6 +10,8 @@
 
 @import './miniSection.scss';
 
+@import './sideNavabr.scss';
+
 @media (max-width: 865px){
   header .head{
     width: 90%;
@@ -32,6 +34,10 @@
         }
         .hamburguer > img {
           width: 100%;
+        }
+        img{
+          width: 100%;
+          height: 1.3em;
         }
         .contentBtns{
           display: none;
@@ -105,6 +111,18 @@
       }
       .text{
         padding: 0;
+      }
+      .values{
+        max-width: 100%;
+        width: 100%;
+        justify-content: space-between;
+        .mainValue{
+          margin-right: 1em;
+        }
+        .discountAmount{
+          position: relative;
+          right: 18%;
+        }
       }
       .itemQuantityBtns{
         display: grid;

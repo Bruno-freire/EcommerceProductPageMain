@@ -15,7 +15,7 @@
   <header>
     <div class="head">
       <div class="leftHeader">
-        <div class="hamburguer"><img src="./images/icon-menu.svg" alt="icon-menu"></div>
+        <div class="hamburguer"><img id="hamburguerIcon" src="./images/icon-menu.svg" alt="icon-menu"></div>
         <img src="./images/logo.svg" alt="">
         <div class="contentBtns">
           <button class="btnHeader" id="btnHeader1" translate="no">Collections</button>
@@ -42,7 +42,7 @@
           <div class="miniSection" id="contentCart" style="display: none;">
             <div class="cartTitleSection"><strong>Cart</strong><hr></div>
             <div class="contentMiniSection">
-              <div class="miniContent"><p>Is Empty</p></div>
+              <div class="miniContent"><p>Is Empty.</p></div>
               <div class="checkout" id="checkoutId" style="display: none;"><button>Checkout</button></div>
             </div>
           </div>
@@ -142,7 +142,21 @@
     </div>
     <div class="backgroundBlack"></div>
   </div>
-  
+  <div class="sideNavbar">
+    <div class="contentNavbar">
+        <div class="itensNavbar">
+          <div class="closeNavbar"><img id="closeIcon" src="./images/icon-close.svg" alt=""></div>
+          <div class="textNavbar">
+            <p>Collections</p>
+            <p>Men</p>
+            <p>Women</p>
+            <p>About</p>
+            <p>Contact</p>
+          </div>
+        </div>
+    </div>
+    <div class="backgroundNavbar"></div>
+  </div>
   <!-- <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
     Coded by <a href="#">Bruno Freire</a>.

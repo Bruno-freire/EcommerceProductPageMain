@@ -26,3 +26,8 @@ document.getElementById('cart').addEventListener('click', openOrCloseContentCart
 import { addItemInCart } from '../modules/treatCart.js'
 
 document.getElementById('addItemInTheCart').addEventListener('click', addItemInCart)
+
+import { closeHamburguer, openHamburguer } from '../modules/treatHamburguer.js'
+
+document.getElementById('hamburguerIcon').addEventListener('click', openHamburguer)
+document.getElementById('closeIcon').addEventListener('click', closeHamburguer)
