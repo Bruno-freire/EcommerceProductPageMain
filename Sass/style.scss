@@ -9,3 +9,131 @@
 @import './containerImgs.scss';
 
 @import './miniSection.scss';
+
+@media (max-width: 865px){
+  header .head{
+    width: 90%;
+  }
+  main section .firstSection{
+    column-gap: 1em;
+  }
+}
+
+@media (max-width: 765px){
+  header{
+    justify-content: start;
+    .head{
+      width: 100%;
+      padding-left: 1.5em;
+      padding-right: 1.5em;
+      .leftHeader {
+        .hamburguer{
+          display: flex;
+        }
+        .hamburguer > img {
+          width: 100%;
+        }
+        .contentBtns{
+          display: none;
+        }
+      }
+    }
+  }
+  main section .firstSection  {
+    flex-direction: column;
+    margin-top: 2em;
+    .leftFirstSection{
+      flex-direction: row;
+      width: 100%;
+      max-width: 100%;
+      justify-content: center;
+      .mainImg{
+        max-width: 100%;
+        width: 20em;
+      }
+      .thumbnailsImg{
+        flex-direction: column;
+        .thumbnail > img {
+          width: 4.8em;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 442px){
+  .miniSection{
+    left: -17.2em;
+    box-shadow: 0 0 0 0 transparent;
+    top: 4.5em;
+    max-width: 22em;
+    width: 22em;
+    height: 13em;
+    .contentMiniSection{
+      height: 9.8em;
+      .miniContent{
+        max-height: 5em;
+        width: 17em;
+      }
+      .checkout{
+        width: 16em;
+      }
+    }
+  }
+  main section .firstSection{
+    margin-top: 0;
+    margin-bottom: 1.7em;
+    .leftFirstSection{
+      .mainImg{
+        width: 100%;
+      }
+      .carousel-inner{
+        border-radius: 0;
+      }
+      .thumbnailsImg{
+        display: none;
+      }
+    }
+    .rightFirstSection{
+      padding-left: 1.5em;
+      padding-right: 1.5em;
+      .title > * {
+        margin: 0;
+      }
+      .subTitle > *{
+        margin-top: 1em;
+      }
+      .text{
+        padding: 0;
+      }
+      .itemQuantityBtns{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        justify-items: center;
+        row-gap: 0.5em;
+        grid-template-areas:
+        "item1 item2 item3"
+        "item4 item4 item4";
+        .btnAddCart{
+          max-width: 25em;
+          height: 3rem;
+        }
+      }
+      .item1 {
+        grid-area: item1;
+      }
+      .item2 {
+        grid-area: item2;
+      }
+      .item3 {
+        grid-area: item3;
+      }
+      .item4 {
+        grid-area: item4;
+      }
+      .btnAddCart{
+        max-width: 100em;
+      }
+    }
+  }
+}
