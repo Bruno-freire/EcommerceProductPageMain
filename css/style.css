@@ -414,7 +414,7 @@ main section .firstSection .rightFirstSection .itemQuantityBtns .btnAddCart > im
 .sideNavbar {
   display: flex;
   width: 100%;
-  height: 100vh;
+  height: 100%;
   position: absolute;
   bottom: 0;
   transition: 0.5s;
@@ -435,9 +435,14 @@ main section .firstSection .rightFirstSection .itemQuantityBtns .btnAddCart > im
   flex-direction: column;
   row-gap: 2em;
 }
-.sideNavbar .contentNavbar .itensNavbar .closeNavbar > img {
+.sideNavbar .contentNavbar .itensNavbar .closeNavbar {
+  width: 100%;
+  height: 2em;
+}
+.sideNavbar .contentNavbar .itensNavbar .closeNavbar img {
   cursor: pointer;
   width: 1.5em;
+  height: auto;
 }
 .sideNavbar .contentNavbar .itensNavbar .textNavbar > p {
   font-size: 20px;
