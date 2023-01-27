@@ -31,3 +31,4 @@ import { closeHamburguer, openHamburguer } from '../modules/treatHamburguer.js'
 
 document.getElementById('hamburguerIcon').addEventListener('click', openHamburguer)
 document.getElementById('closeIcon').addEventListener('click', closeHamburguer)
+document.querySelector('.backgroundNavbar').addEventListener('click', closeHamburguer)
