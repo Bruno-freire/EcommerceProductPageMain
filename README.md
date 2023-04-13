@@ -1,15 +1,29 @@
-# EcommerceProductPageMain
-Sobre o projeto:
-    Página principal de um e-commerce com apenas 1 produto mas que com algumas 
-  simples alterações no código podemos adicionar varios produtos.
-    Usei os meus mais modernos conhecimentos nesse projeto, como 
-  programação orienta a objetos e manipulação do bootstrap.
+# E-commerce product page
 
-ferramentas:
-html5
-css3
-js
-bootstrap
-npm/webpack/babel
+This project consists of an e-commerce product page, which has a header section with navigation buttons, a shopping cart and a user profile image. In addition, the page has a section of products with a main image and thumbnails, which can be browsed through a carousel.
+
+The HTML file contains the markup for page elements, including metadata configuration for display and behavior on mobile devices.
+
+The CSS file is responsible for styling page elements such as colors, fonts, sizes, and placement.
+
+The images used on the page are stored in the "images" folder, with the exception of the menu icon and the shopping cart icon, which are located in the project root.
+
+# Technologies used
+
+    HTML
+    css
+    Bootstrap (referenced in the HTML file)
+
+# running the project
+
+Simply open the index.html file in a web browser to view the page.
+
+# Contributions
+
+Contributions are welcome! Feel free to submit pull requests with code or documentation improvements.
+
+# License
+
+This project is under license from MIT. See the LICENSE file for more information.
 
 Link do projeto online: https://bruno-freire.github.io/EcommerceProductPageMain/
