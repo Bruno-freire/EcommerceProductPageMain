@@ -26,4 +26,4 @@ Contributions are welcome! Feel free to submit pull requests with code or docume
 
 This project is under license from MIT. See the LICENSE file for more information.
 
-Link do projeto online: https://bruno-freire.github.io/EcommerceProductPageMain/
+Follow the link to access the website: https://bruno-freire.github.io/EcommerceProductPageMain/
